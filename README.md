@@ -1,20 +1,35 @@
-# M_prediction: Movie Recommendation System
+# Movie_Prediction: Movie Recommendation System
 
 ## Overview
 
-`M_prediction` is a movie recommendation system designed to suggest movies to users based on their preferences and input data. The model employs a combination of collaborative filtering and content-based filtering techniques to offer personalized movie recommendations. Whether you're a casual viewer looking for a weekend movie or a film enthusiast seeking hidden gems, `M_prediction` will help you discover movies tailored to your tastes.
+`Movie_Prediction` is a content-based movie recommendation system that suggests movies to users based on a similarity score calculated from various movie features. The model analyzes the genres, keywords, tagline, cast, and director of movies to find and recommend films similar to the user's favorite movie.
 
 ## Features
 
-- **Personalized Recommendations**: Generates movie suggestions based on user ratings, genre preferences, and viewing history.
-- **Hybrid Filtering**: Combines collaborative filtering (using user-item interaction data) and content-based filtering (utilizing movie metadata) for more accurate recommendations.
-- **Scalable**: Capable of handling large datasets with numerous users and movies.
-- **User Input**: Accepts user preferences and input to fine-tune recommendations.
+- **Content-Based Filtering**: Recommends movies by analyzing and comparing movie features like genre, cast, and director.
+- **Cosine Similarity**: Uses cosine similarity to calculate how closely related different movies are based on their feature vectors.
+- **User Input**: Accepts a favorite movie from the user and returns the top 10 similar movies.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Ashwini-021/M_prediction.git
-   cd M_prediction
+   git clone https://github.com/yourusername/Movie_Prediction.git
+   cd Movie_Prediction
+2.Install the required Python libraries:
+  pip install pandas numpy scikit-learn
+3.# Sample Input:
+Enter your favourite movie name: The Matrix
 
+# Sample Output:
+Top 10 Movies Suggested for you:
+1. The Matrix Reloaded
+2. The Matrix Revolutions
+3. Inception
+4. Blade Runner
+5. The Terminator
+6. Minority Report
+7. The Fifth Element
+8. Tron: Legacy
+9. Equilibrium
+10. Dark City
